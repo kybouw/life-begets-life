@@ -1,7 +1,7 @@
 /* 
  * Life begets Life
  *
- * Copyright (c) Kyle Bouwman 2020
+ * Copyright (c) Kyle Bouwman 2020-2021
  *
  */
 
@@ -119,7 +119,7 @@ function next() {
     var living = get_life_col(i);
     
     if(living % 100000 === 0) {
-      //kill_tree(i);                      // trees can die
+      kill_tree(i);                      // trees can die
     }
     else {
       if(next_move < 1) {
@@ -235,13 +235,13 @@ function next_cell(row, col) {
   
   if(tc === 1) // if cell is alive
     return (live_neighbors < 2 || live_neighbors > 3) ? 0 : 1;           // normal conway
-    //return (live_neighbors < 1 || live_neighbors > 3) ? 0 : 1;           // 2 is not lonely
-    //return (live_neighbors < 5) ? 0 : 1;                                // symmetric
+    // return (live_neighbors < 1 || live_neighbors > 3) ? 0 : 1;           // 2 is not lonely
+    // return (live_neighbors < 5) ? 0 : 1;                                // symmetric
   else // if cell is not alive
     return (live_neighbors === 3) ? 1 : 0;                           // normal conway
-    //return 1;                                                  // revive immediately
-    //return (live_neighbors === 2) ? 1 : 0;                        // two n revive
-    //return (live_neighbors < 5) ? 1 : 0;                                // symmetric
+    // return 1;                                                  // revive immediately
+    // return (live_neighbors === 2) ? 1 : 0;                        // two n revive
+    // return (live_neighbors < 5) ? 1 : 0;                                // symmetric
 }
 
 function wrap(index, wrap_limit) {
@@ -295,7 +295,3 @@ function keyPressed() {
     running = 1;
   }
 }
-
-
-
-
