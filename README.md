@@ -19,3 +19,21 @@ Here are a few examples of forests that have been made with this program, with a
 ### Conway's Game with life and death
 
 ![Normal Settings](examples/normalsettings.jpg)
+
+### Conway's Game without death
+
+![No trees die, early](examples/treescannotdie1.jpg)
+
+![No trees die, later](examples/treescannotdie2.jpg)
+
+### Conway's when 2 neighbors is not considered lonely
+
+![2 is not lonely](examples/2notlonely.jpg)
+
+### Conway's when dead cells are instantly revived
+
+![Instant revive](examples/instantrevive.jpg)
+
+### Conway's when most cells live
+
+![Mostly alive](examples/mostlylive.jpg)
