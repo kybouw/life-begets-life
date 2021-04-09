@@ -26,7 +26,7 @@ Here are a few examples of forests that have been made with this program, with a
 
 ![No trees die, later](examples/treescannotdie2.jpg)
 
-### Conway's when 2 neighbors is not considered lonely
+### Conway's when 2 neighbors is not considered lonely (my favorite!)
 
 ![2 is not lonely](examples/2notlonely.jpg)
 
